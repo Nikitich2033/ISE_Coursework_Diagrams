@@ -6,7 +6,7 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_2jIy0GvOEeufzaD0sHL4Hw" name="Module Leader">
     <generalization xmi:type="uml:Generalization" xmi:id="_8ueeQGvPEeufzaD0sHL4Hw" general="_41mksGvOEeufzaD0sHL4Hw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_3bUYAGvOEeufzaD0sHL4Hw" name="Lecture">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3bUYAGvOEeufzaD0sHL4Hw" name="Lecturer">
     <generalization xmi:type="uml:Generalization" xmi:id="_8Lr6QGvPEeufzaD0sHL4Hw" general="_41mksGvOEeufzaD0sHL4Hw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_41mksGvOEeufzaD0sHL4Hw" name="{ abstract } Reporter"/>
