@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TBa74GvQEeufzaD0sHL4Hw" name="model2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_TB2ZsGvQEeufzaD0sHL4Hw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VBWMQGvQEeufzaD0sHL4Hw" name="Academic Misconduct Team"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YjCKUGvQEeufzaD0sHL4Hw" name="Check case">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_iKAroGvQEeufzaD0sHL4Hw" name="Check case">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_t2_3MGvQEeufzaD0sHL4Hw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wF7M4GvQEeufzaD0sHL4Hw" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_okh4AGvQEeufzaD0sHL4Hw" name="Drop case">
+      <extend xmi:type="uml:Extend" xmi:id="_t2_QIGvQEeufzaD0sHL4Hw" extendedCase="_iKAroGvQEeufzaD0sHL4Hw" extensionLocation="_t2_3MGvQEeufzaD0sHL4Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uZF3oGvQEeufzaD0sHL4Hw" name="Forward case">
+      <extend xmi:type="uml:Extend" xmi:id="_wF6l0GvQEeufzaD0sHL4Hw" extendedCase="_iKAroGvQEeufzaD0sHL4Hw" extensionLocation="_wF7M4GvQEeufzaD0sHL4Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_N0r70GvREeufzaD0sHL4Hw" name="Verify previous offences">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_1w4IEWvREeufzaD0sHL4Hw" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_5wKoIWvREeufzaD0sHL4Hw" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_K6p-MGvSEeufzaD0sHL4Hw" name="ExtensionPoint4"/>
+      <include xmi:type="uml:Include" xmi:id="_Rf3NEGvREeufzaD0sHL4Hw" addition="_uZF3oGvQEeufzaD0sHL4Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3Mr-wGvREeufzaD0sHL4Hw" name="Setup hearing ">
+      <extend xmi:type="uml:Extend" xmi:id="_5wKoIGvREeufzaD0sHL4Hw" extendedCase="_N0r70GvREeufzaD0sHL4Hw" extensionLocation="_5wKoIWvREeufzaD0sHL4Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_61NkoGvREeufzaD0sHL4Hw" name="Setup Interview">
+      <extend xmi:type="uml:Extend" xmi:id="_K6pXIGvSEeufzaD0sHL4Hw" extendedCase="_N0r70GvREeufzaD0sHL4Hw" extensionLocation="_K6p-MGvSEeufzaD0sHL4Hw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4mITYGvQEeufzaD0sHL4Hw" memberEnd="_4mI6cmvQEeufzaD0sHL4Hw _4mI6c2vQEeufzaD0sHL4Hw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4mI6cGvQEeufzaD0sHL4Hw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4mI6cWvQEeufzaD0sHL4Hw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4mI6cmvQEeufzaD0sHL4Hw" name="academic misconduct team" type="_VBWMQGvQEeufzaD0sHL4Hw" association="_4mITYGvQEeufzaD0sHL4Hw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4mI6c2vQEeufzaD0sHL4Hw" name="check case" type="_iKAroGvQEeufzaD0sHL4Hw" association="_4mITYGvQEeufzaD0sHL4Hw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Ho_1oGvREeufzaD0sHL4Hw" name="SCO"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dSc04GvSEeufzaD0sHL4Hw" memberEnd="_dSdb8mvSEeufzaD0sHL4Hw _dSdb82vSEeufzaD0sHL4Hw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dSdb8GvSEeufzaD0sHL4Hw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dSdb8WvSEeufzaD0sHL4Hw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dSdb8mvSEeufzaD0sHL4Hw" name="sco" type="_Ho_1oGvREeufzaD0sHL4Hw" association="_dSc04GvSEeufzaD0sHL4Hw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dSdb82vSEeufzaD0sHL4Hw" name="verify previous offences" type="_N0r70GvREeufzaD0sHL4Hw" association="_dSc04GvSEeufzaD0sHL4Hw"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_wPWgkGvOEeufzaD0sHL4Hw" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_wPuUAGvOEeufzaD0sHL4Hw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_2jIy0GvOEeufzaD0sHL4Hw" name="Module Leader">
+    <generalization xmi:type="uml:Generalization" xmi:id="_8ueeQGvPEeufzaD0sHL4Hw" general="_41mksGvOEeufzaD0sHL4Hw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_3bUYAGvOEeufzaD0sHL4Hw" name="Lecture">
+    <generalization xmi:type="uml:Generalization" xmi:id="_8Lr6QGvPEeufzaD0sHL4Hw" general="_41mksGvOEeufzaD0sHL4Hw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_41mksGvOEeufzaD0sHL4Hw" name="{ abstract } Reporter"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_M6OwoGvPEeufzaD0sHL4Hw" name="UseCase5"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_m88EkGvPEeufzaD0sHL4Hw" name="Report case">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_w0RWEGvPEeufzaD0sHL4Hw" name="Report case"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CG7JoGvQEeufzaD0sHL4Hw" memberEnd="_CG7wsmvQEeufzaD0sHL4Hw _CG7ws2vQEeufzaD0sHL4Hw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CG7wsGvQEeufzaD0sHL4Hw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CG7wsWvQEeufzaD0sHL4Hw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CG7wsmvQEeufzaD0sHL4Hw" name="report case" type="_w0RWEGvPEeufzaD0sHL4Hw" association="_CG7JoGvQEeufzaD0sHL4Hw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CG7ws2vQEeufzaD0sHL4Hw" name="{ abstract } reporter" type="_41mksGvOEeufzaD0sHL4Hw" association="_CG7JoGvQEeufzaD0sHL4Hw"/>
+  </packagedElement>
+</uml:Model>
