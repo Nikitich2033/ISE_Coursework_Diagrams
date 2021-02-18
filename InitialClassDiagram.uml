@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DTVKsHIYEeuHMvrSl-CXLQ" name="Diagrams">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DTVKsHIYEeuHMvrSl-CXLQ" name="Diagrams">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_DVEQEHIYEeuHMvrSl-CXLQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QS4KUHIYEeuHMvrSl-CXLQ" name="Student" isAbstract="true" isActive="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KJvW8HIaEeuHMvrSl-CXLQ" name="FullName" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_woswMHIaEeuHMvrSl-CXLQ" name="DOB" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6cbeoHIbEeuHMvrSl-CXLQ" name="studentNumber" aggregation="shared">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LzeNgHIdEeuHMvrSl-CXLQ" name="Email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qk5HYHIYEeuHMvrSl-CXLQ" name="Lecturer/Module leader">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8IcpoHIdEeuHMvrSl-CXLQ" name="FullName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8iQ30HIdEeuHMvrSl-CXLQ" name="Module">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gv6VwHIeEeuHMvrSl-CXLQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_82MgcHIdEeuHMvrSl-CXLQ" name="Email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_efKC0HIYEeuHMvrSl-CXLQ" name="SCO">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6Qel8HIeEeuHMvrSl-CXLQ" name="getPreviousOffences" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_S2vUkHIgEeuHMvrSl-CXLQ" name="studentNumber">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nz2AoHIgEeuHMvrSl-CXLQ" name="NumberOfOffences" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GSCTUHIfEeuHMvrSl-CXLQ" name="referCase" visibility="private" isQuery="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VoGMcHIhEeuHMvrSl-CXLQ" name="SCO_Code" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YpjdMHIfEeuHMvrSl-CXLQ" name="getCaseStatus" visibility="private" concurrency="guarded">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KsurEHIhEeuHMvrSl-CXLQ" name="caseCode">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QVPywHIhEeuHMvrSl-CXLQ" name="StatusInHTML" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gQ5GMHIYEeuHMvrSl-CXLQ" name="PS Team"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oLzuUHIYEeuHMvrSl-CXLQ" name="Academic Misconduct Team"/>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_hbq6cHIcEeuHMvrSl-CXLQ" name="Case" visibility="private" memberEnd="_hbuk0HIcEeuHMvrSl-CXLQ _hbvL4HIcEeuHMvrSl-CXLQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hbt9wHIcEeuHMvrSl-CXLQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hbt9wXIcEeuHMvrSl-CXLQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9Xco0HIcEeuHMvrSl-CXLQ" name="ModuleCode">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9m1vsHIcEeuHMvrSl-CXLQ" name="Student_Number">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9rAeAHIcEeuHMvrSl-CXLQ" name="Student_Name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dpmhkHIdEeuHMvrSl-CXLQ" name="Student_Email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hZQqMHIdEeuHMvrSl-CXLQ" name="TypeOfMisconduct">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_raHEEHIdEeuHMvrSl-CXLQ" name="AnonymizedEvidence">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wQMpQHIdEeuHMvrSl-CXLQ" name="AssessmentAffected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zft5QHIdEeuHMvrSl-CXLQ" name="PercentageOfTotalMark">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hbuk0HIcEeuHMvrSl-CXLQ" name="lecturer/module leader" type="_Qk5HYHIYEeuHMvrSl-CXLQ" association="_hbq6cHIcEeuHMvrSl-CXLQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hbvL4HIcEeuHMvrSl-CXLQ" name="student" type="_QS4KUHIYEeuHMvrSl-CXLQ" association="_hbq6cHIcEeuHMvrSl-CXLQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fgzW8HIhEeuHMvrSl-CXLQ" name="Member of AMT">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6P4BoHIhEeuHMvrSl-CXLQ" name="FullName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EttScHIiEeuHMvrSl-CXLQ" name="Email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dbKDoHIiEeuHMvrSl-CXLQ" name="Checks" memberEnd="_dbKqsnIiEeuHMvrSl-CXLQ _dbKqs3IiEeuHMvrSl-CXLQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dbKqsHIiEeuHMvrSl-CXLQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dbKqsXIiEeuHMvrSl-CXLQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dbKqsnIiEeuHMvrSl-CXLQ" name="member of AMT" type="_fgzW8HIhEeuHMvrSl-CXLQ" association="_dbKDoHIiEeuHMvrSl-CXLQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dbKqs3IiEeuHMvrSl-CXLQ" name="report" type="_hbq6cHIcEeuHMvrSl-CXLQ" association="_dbKDoHIiEeuHMvrSl-CXLQ"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6YpSMHIYEeuHMvrSl-CXLQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6YqgUHIYEeuHMvrSl-CXLQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
