@@ -42,10 +42,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_RiLH8GvWEeufzaD0sHL4Hw" name="Sent to student">
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kWTVUGvWEeufzaD0sHL4Hw" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_p6fYUHIFEeu8IaJS3XXhrg" addition="_he3OIGvWEeufzaD0sHL4Hw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_he3OIGvWEeufzaD0sHL4Hw" name="A form to be signed">
-      <extend xmi:type="uml:Extend" xmi:id="_kWSuQGvWEeufzaD0sHL4Hw" extendedCase="_RiLH8GvWEeufzaD0sHL4Hw" extensionLocation="_kWTVUGvWEeufzaD0sHL4Hw"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_he3OIGvWEeufzaD0sHL4Hw" name="Sign form"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_AzDUsGvVEeufzaD0sHL4Hw" name="SCO"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_CocwEGvVEeufzaD0sHL4Hw" memberEnd="_CocwE2vVEeufzaD0sHL4Hw _CocwFGvVEeufzaD0sHL4Hw">
@@ -69,5 +68,13 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Mbe68mvWEeufzaD0sHL4Hw" name="ps team" type="_8cknMGvVEeufzaD0sHL4Hw" association="_MbeT4GvWEeufzaD0sHL4Hw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Mbe682vWEeufzaD0sHL4Hw" name="outcome" type="_9oUooGvVEeufzaD0sHL4Hw" association="_MbeT4GvWEeufzaD0sHL4Hw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_agZo4HIFEeu8IaJS3XXhrg" name="Student"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fTs_0HIFEeu8IaJS3XXhrg" memberEnd="_fTu1AHIFEeu8IaJS3XXhrg _fTu1AXIFEeu8IaJS3XXhrg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fTuN8HIFEeu8IaJS3XXhrg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fTuN8XIFEeu8IaJS3XXhrg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fTu1AHIFEeu8IaJS3XXhrg" name="sign form" type="_he3OIGvWEeufzaD0sHL4Hw" association="_fTs_0HIFEeu8IaJS3XXhrg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fTu1AXIFEeu8IaJS3XXhrg" name="student" type="_agZo4HIFEeu8IaJS3XXhrg" association="_fTs_0HIFEeu8IaJS3XXhrg"/>
   </packagedElement>
 </uml:Model>
