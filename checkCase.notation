@@ -123,6 +123,7 @@
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_UORJg2vQEeufzaD0sHL4Hw" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
     <owner xmi:type="uml:Model" href="checkCase.uml#_TBa74GvQEeufzaD0sHL4Hw"/>
   </styles>
+  <styles xmi:type="notation:BooleanValueStyle" xmi:id="_XsT_UHelEeuwiaubwwdVLA" name="rulergrid.viewgrid"/>
   <element xmi:type="uml:Model" href="checkCase.uml#_TBa74GvQEeufzaD0sHL4Hw"/>
   <edges xmi:type="notation:Connector" xmi:id="_t3BsYGvQEeufzaD0sHL4Hw" type="Extend_Edge" source="_okjtMGvQEeufzaD0sHL4Hw" target="_iKCg0GvQEeufzaD0sHL4Hw">
     <children xmi:type="notation:DecorationNode" xmi:id="_t3CTcGvQEeufzaD0sHL4Hw" type="Extend_KeywordLabel">
