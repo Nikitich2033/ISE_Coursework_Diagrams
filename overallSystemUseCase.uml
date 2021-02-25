@@ -58,8 +58,10 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_N9n_YHeYEeuwiaubwwdVLA" name="Confirm Attendence">
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Tp6z0XeYEeuwiaubwwdVLA" name="ExtensionPoint1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_ORO34HeYEeuwiaubwwdVLA" name="Complete Form">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ORO34HeYEeuwiaubwwdVLA" name="Receive Form">
     <extend xmi:type="uml:Extend" xmi:id="_Tp6z0HeYEeuwiaubwwdVLA" extendedCase="_N9n_YHeYEeuwiaubwwdVLA" extensionLocation="_Tp6z0XeYEeuwiaubwwdVLA"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ff-kAHegEeuwiaubwwdVLA" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GReSYXegEeuwiaubwwdVLA" name="ExtensionPoint3"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ULCj4HeYEeuwiaubwwdVLA" memberEnd="_ULDK8neYEeuwiaubwwdVLA _ULDK83eYEeuwiaubwwdVLA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ULDK8HeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
@@ -102,5 +104,13 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_edFbcneYEeuwiaubwwdVLA" name="report case" type="_nU40gHeWEeuwiaubwwdVLA" association="_edE0YHeYEeuwiaubwwdVLA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_edFbc3eYEeuwiaubwwdVLA" name="lecturer" type="_YCHOAHeWEeuwiaubwwdVLA" association="_edE0YHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bso-AHehEeuwiaubwwdVLA" name="Check Completed Form"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dwByEHehEeuwiaubwwdVLA" memberEnd="_dwByE3ehEeuwiaubwwdVLA _dwByFHehEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dwByEXehEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dwByEnehEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dwByE3ehEeuwiaubwwdVLA" name="check completed form" type="_bso-AHehEeuwiaubwwdVLA" association="_dwByEHehEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dwByFHehEeuwiaubwwdVLA" name="am team" type="_ZJwLgHeWEeuwiaubwwdVLA" association="_dwByEHehEeuwiaubwwdVLA"/>
   </packagedElement>
 </uml:Model>

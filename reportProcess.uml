@@ -41,7 +41,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_oJBF4Wu-EeufzaD0sHL4Hw" name="report case" type="_lVFlsGu-EeufzaD0sHL4Hw" association="_oI_QsGu-EeufzaD0sHL4Hw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_oJCUAGu-EeufzaD0sHL4Hw" name="" type="_RETCgGu9EeufzaD0sHL4Hw" association="_oI_QsGu-EeufzaD0sHL4Hw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_zvARkGu-EeufzaD0sHL4Hw" name="Academic Misconduct Team"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_zvARkGu-EeufzaD0sHL4Hw" name="AM Team"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_C17NYGu_EeufzaD0sHL4Hw" memberEnd="_C170cmu_EeufzaD0sHL4Hw _C170c2u_EeufzaD0sHL4Hw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C170cGu_EeufzaD0sHL4Hw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C170cWu_EeufzaD0sHL4Hw" key="nature" value="UML_Nature"/>
