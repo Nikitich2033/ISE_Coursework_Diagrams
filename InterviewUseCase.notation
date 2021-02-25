@@ -330,7 +330,7 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_agcFJ3IFEeu8IaJS3XXhrg" y="15"/>
     </children>
     <element xmi:type="uml:Actor" href="InterviewUseCase.uml#_agZo4HIFEeu8IaJS3XXhrg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_agbeEXIFEeu8IaJS3XXhrg" x="1380" y="820"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_agbeEXIFEeu8IaJS3XXhrg" x="1340" y="600"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_xspBIWvSEeufzaD0sHL4Hw" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_xspBImvSEeufzaD0sHL4Hw"/>

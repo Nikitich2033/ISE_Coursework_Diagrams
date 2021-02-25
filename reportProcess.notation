@@ -194,6 +194,7 @@
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_P_DRs2u9EeufzaD0sHL4Hw" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
     <owner xmi:type="uml:Model" href="reportProcess.uml#_P-5gsGu9EeufzaD0sHL4Hw"/>
   </styles>
+  <styles xmi:type="notation:BooleanValueStyle" xmi:id="_4Qp-0HemEeuwiaubwwdVLA" name="rulergrid.viewgrid"/>
   <element xmi:type="uml:Model" href="reportProcess.uml#_P-5gsGu9EeufzaD0sHL4Hw"/>
   <edges xmi:type="notation:Connector" xmi:id="_oJF-YGu-EeufzaD0sHL4Hw" type="Association_Edge" source="_REU3sGu9EeufzaD0sHL4Hw" target="_lVIB8Gu-EeufzaD0sHL4Hw">
     <children xmi:type="notation:DecorationNode" xmi:id="_oJF-Y2u-EeufzaD0sHL4Hw" type="Association_NameLabel">
