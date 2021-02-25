@@ -216,17 +216,17 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Xp12AHIGEeu8IaJS3XXhrg" id="(1.0,0.5)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Xp2dEHIGEeu8IaJS3XXhrg" id="(0.0,0.5)"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_YZtMsHIGEeu8IaJS3XXhrg" type="Extend_Edge" source="_w0UZYGvPEeufzaD0sHL4Hw" target="_PkZY4HIGEeu8IaJS3XXhrg">
-    <children xmi:type="notation:DecorationNode" xmi:id="_YZtzwHIGEeu8IaJS3XXhrg" type="Extend_KeywordLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_YZtzwXIGEeu8IaJS3XXhrg" y="20"/>
+  <edges xmi:type="notation:Connector" xmi:id="_BQv2YHeTEeuwiaubwwdVLA" type="Include_Edge" source="_PkZY4HIGEeu8IaJS3XXhrg" target="_w0UZYGvPEeufzaD0sHL4Hw">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BQwdcHeTEeuwiaubwwdVLA" type="Include_KeywordLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BQwdcXeTEeuwiaubwwdVLA" y="20"/>
     </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_YZtzwnIGEeu8IaJS3XXhrg" type="Extend_StereotypeLabel">
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_YZtzw3IGEeu8IaJS3XXhrg" y="-20"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BQwdcneTEeuwiaubwwdVLA" type="Include_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BQwdc3eTEeuwiaubwwdVLA" y="-20"/>
     </children>
-    <styles xmi:type="notation:FontStyle" xmi:id="_YZtMsXIGEeu8IaJS3XXhrg"/>
-    <element xmi:type="uml:Extend" href="ReportCaseUseCase.uml#_YZS9AHIGEeu8IaJS3XXhrg"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YZtMsnIGEeu8IaJS3XXhrg" points="[680, 334, -643984, -643984]$[760, 470, -643984, -643984]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YaVe0HIGEeu8IaJS3XXhrg" id="(0.8571428571428571,0.8333333333333334)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YaVe0XIGEeu8IaJS3XXhrg" id="(0.0,0.5)"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BQv2YXeTEeuwiaubwwdVLA"/>
+    <element xmi:type="uml:Include" href="ReportCaseUseCase.uml#_BQohoHeTEeuwiaubwwdVLA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BQv2YneTEeuwiaubwwdVLA" points="[760, 465, -643984, -643984]$[660, 336, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BRA8IHeTEeuwiaubwwdVLA" id="(0.0,0.49333333333333373)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BRA8IXeTEeuwiaubwwdVLA" id="(0.7142857142857143,0.9466666666666669)"/>
   </edges>
 </notation:Diagram>

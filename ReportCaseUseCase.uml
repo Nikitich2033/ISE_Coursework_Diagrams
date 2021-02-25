@@ -13,7 +13,6 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_M6OwoGvPEeufzaD0sHL4Hw" name="UseCase5"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_m88EkGvPEeufzaD0sHL4Hw" name="Report case">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_w0RWEGvPEeufzaD0sHL4Hw" name="Report case">
-      <extend xmi:type="uml:Extend" xmi:id="_YZS9AHIGEeu8IaJS3XXhrg" extendedCase="_PkEBsHIGEeu8IaJS3XXhrg" extensionLocation="_YZXOcHIGEeu8IaJS3XXhrg"/>
       <include xmi:type="uml:Include" xmi:id="_WRoF4HIGEeu8IaJS3XXhrg" addition="_9s6Z8HIFEeu8IaJS3XXhrg"/>
       <include xmi:type="uml:Include" xmi:id="_XDmVYHIGEeu8IaJS3XXhrg" addition="_DoN6wHIGEeu8IaJS3XXhrg"/>
       <include xmi:type="uml:Include" xmi:id="_XoytIHIGEeu8IaJS3XXhrg" addition="_KzJQYHIGEeu8IaJS3XXhrg"/>
@@ -23,6 +22,7 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_KzJQYHIGEeu8IaJS3XXhrg" name="Provide type of misconduct"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_PkEBsHIGEeu8IaJS3XXhrg" name="Provide anonymized evidence">
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_YZXOcHIGEeu8IaJS3XXhrg" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_BQohoHeTEeuwiaubwwdVLA" addition="_w0RWEGvPEeufzaD0sHL4Hw"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_CG7JoGvQEeufzaD0sHL4Hw" memberEnd="_CG7wsmvQEeufzaD0sHL4Hw _CG7ws2vQEeufzaD0sHL4Hw">

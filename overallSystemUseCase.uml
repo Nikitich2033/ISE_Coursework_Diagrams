@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_RrXHUHeWEeuwiaubwwdVLA" name="overallSystemUseCase">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_RsPREHeWEeuwiaubwwdVLA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YCHOAHeWEeuwiaubwwdVLA" name="Lecturer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZJwLgHeWEeuwiaubwwdVLA" name="AM Team"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZkAekHeWEeuwiaubwwdVLA" name="SCO"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nU40gHeWEeuwiaubwwdVLA" name="Report Case"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pW3TUHeWEeuwiaubwwdVLA" name="Check Case">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_R71r8HeZEeuwiaubwwdVLA" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_qX7HsHeWEeuwiaubwwdVLA" name="Drop Case">
+    <extend xmi:type="uml:Extend" xmi:id="_R71E4HeZEeuwiaubwwdVLA" extendedCase="_pW3TUHeWEeuwiaubwwdVLA" extensionLocation="_R71r8HeZEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_rCVWoHeWEeuwiaubwwdVLA" name="Forward Case">
+    <extend xmi:type="uml:Extend" xmi:id="_SZtTsHeZEeuwiaubwwdVLA" extendedCase="_pW3TUHeWEeuwiaubwwdVLA" extensionLocation="_SZt6wHeZEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_srr6EHeWEeuwiaubwwdVLA" name="Make Summary Of Interview">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_SZt6wHeZEeuwiaubwwdVLA" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_2rDtQHeWEeuwiaubwwdVLA" name="Verify Previous Offences">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HHrQsXeXEeuwiaubwwdVLA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_vJb5cHeXEeuwiaubwwdVLA" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_vpy0gXeXEeuwiaubwwdVLA" name="ExtensionPoint3"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_BWxpEHeXEeuwiaubwwdVLA" name="Setup Hearing"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DvHZcHeXEeuwiaubwwdVLA" name="Previous Offences Verified">
+    <extend xmi:type="uml:Extend" xmi:id="_HHrQsHeXEeuwiaubwwdVLA" extendedCase="_2rDtQHeWEeuwiaubwwdVLA" extensionLocation="_HHrQsXeXEeuwiaubwwdVLA"/>
+    <include xmi:type="uml:Include" xmi:id="_I7CrwHeXEeuwiaubwwdVLA" addition="_BWxpEHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LMLA4HeXEeuwiaubwwdVLA" name="No Previous Offences, 3rd Party Involvement Verified">
+    <extend xmi:type="uml:Extend" xmi:id="_vpy0gHeXEeuwiaubwwdVLA" extendedCase="_2rDtQHeWEeuwiaubwwdVLA" extensionLocation="_vpy0gXeXEeuwiaubwwdVLA"/>
+    <include xmi:type="uml:Include" xmi:id="_w5mPgHeXEeuwiaubwwdVLA" addition="_c9XKkHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_c9XKkHeXEeuwiaubwwdVLA" name="Setup Interview">
+    <include xmi:type="uml:Include" xmi:id="_zCgcwHeXEeuwiaubwwdVLA" addition="_eU7acHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eU7acHeXEeuwiaubwwdVLA" name="Interview Invite Sent"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hUEFEHeXEeuwiaubwwdVLA" name="Setup LAMP Interview">
+    <include xmi:type="uml:Include" xmi:id="_zaxLwHeXEeuwiaubwwdVLA" addition="_eU7acHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kbESQHeXEeuwiaubwwdVLA" name="No Previous Offences, Other Offences (Collusion etc.) Verified">
+    <extend xmi:type="uml:Extend" xmi:id="_vJbSYHeXEeuwiaubwwdVLA" extendedCase="_2rDtQHeWEeuwiaubwwdVLA" extensionLocation="_vJb5cHeXEeuwiaubwwdVLA"/>
+    <include xmi:type="uml:Include" xmi:id="_xw0ycHeXEeuwiaubwwdVLA" addition="_hUEFEHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0yz8wHeXEeuwiaubwwdVLA" memberEnd="_0y0j0neXEeuwiaubwwdVLA _0y0j03eXEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0y0j0HeXEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0y0j0XeXEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0y0j0neXEeuwiaubwwdVLA" name="verify previous offences" type="_2rDtQHeWEeuwiaubwwdVLA" association="_0yz8wHeXEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0y0j03eXEeuwiaubwwdVLA" name="copyof_actor4_5" type="_ZkAekHeWEeuwiaubwwdVLA" association="_0yz8wHeXEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_2fF4YHeXEeuwiaubwwdVLA" name="PS Team"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9PcK0HeXEeuwiaubwwdVLA" name="Outcome of Hearing Registered"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_9t8rwHeXEeuwiaubwwdVLA" name="Send Signed Form, Outcome of Interview To Student"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_LEU3AHeYEeuwiaubwwdVLA" name="Student"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_N9n_YHeYEeuwiaubwwdVLA" name="Confirm Attendence">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Tp6z0XeYEeuwiaubwwdVLA" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ORO34HeYEeuwiaubwwdVLA" name="Complete Form">
+    <extend xmi:type="uml:Extend" xmi:id="_Tp6z0HeYEeuwiaubwwdVLA" extendedCase="_N9n_YHeYEeuwiaubwwdVLA" extensionLocation="_Tp6z0XeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ULCj4HeYEeuwiaubwwdVLA" memberEnd="_ULDK8neYEeuwiaubwwdVLA _ULDK83eYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ULDK8HeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ULDK8XeYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ULDK8neYEeuwiaubwwdVLA" name="confirm attendence" type="_N9n_YHeYEeuwiaubwwdVLA" association="_ULCj4HeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ULDK83eYEeuwiaubwwdVLA" name="student" type="_LEU3AHeYEeuwiaubwwdVLA" association="_ULCj4HeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VNffYHeYEeuwiaubwwdVLA" memberEnd="_VNffY3eYEeuwiaubwwdVLA _VNffZHeYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VNffYXeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNffYneYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VNffY3eYEeuwiaubwwdVLA" name="send signed form, outcome of interview to student" type="_9t8rwHeXEeuwiaubwwdVLA" association="_VNffYHeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VNffZHeYEeuwiaubwwdVLA" name="ps team" type="_2fF4YHeXEeuwiaubwwdVLA" association="_VNffYHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VyN9EHeYEeuwiaubwwdVLA" memberEnd="_VyOkIneYEeuwiaubwwdVLA _VyOkI3eYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VyOkIHeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VyOkIXeYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VyOkIneYEeuwiaubwwdVLA" name="outcome of hearing registered" type="_9PcK0HeXEeuwiaubwwdVLA" association="_VyN9EHeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VyOkI3eYEeuwiaubwwdVLA" name="ps team" type="_2fF4YHeXEeuwiaubwwdVLA" association="_VyN9EHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_crsWUHeYEeuwiaubwwdVLA" memberEnd="_crsWU3eYEeuwiaubwwdVLA _crsWVHeYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_crsWUXeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_crsWUneYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_crsWU3eYEeuwiaubwwdVLA" name="check case" type="_pW3TUHeWEeuwiaubwwdVLA" association="_crsWUHeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_crsWVHeYEeuwiaubwwdVLA" name="am team" type="_ZJwLgHeWEeuwiaubwwdVLA" association="_crsWUHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dRMQEHeYEeuwiaubwwdVLA" memberEnd="_dRMQE3eYEeuwiaubwwdVLA _dRMQFHeYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dRMQEXeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dRMQEneYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dRMQE3eYEeuwiaubwwdVLA" name="make summary of interview" type="_srr6EHeWEeuwiaubwwdVLA" association="_dRMQEHeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dRMQFHeYEeuwiaubwwdVLA" name="am team" type="_ZJwLgHeWEeuwiaubwwdVLA" association="_dRMQEHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_edE0YHeYEeuwiaubwwdVLA" memberEnd="_edFbcneYEeuwiaubwwdVLA _edFbc3eYEeuwiaubwwdVLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_edFbcHeYEeuwiaubwwdVLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_edFbcXeYEeuwiaubwwdVLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_edFbcneYEeuwiaubwwdVLA" name="report case" type="_nU40gHeWEeuwiaubwwdVLA" association="_edE0YHeYEeuwiaubwwdVLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_edFbc3eYEeuwiaubwwdVLA" name="lecturer" type="_YCHOAHeWEeuwiaubwwdVLA" association="_edE0YHeYEeuwiaubwwdVLA"/>
+  </packagedElement>
+</uml:Model>
